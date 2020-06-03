@@ -1,0 +1,35 @@
+nav{
+    .navbar-brand{
+        margin-top: 10px;
+        margin-right: 0;
+        margin-left: 25px;
+        img{
+            height: 40px;
+        }
+    }
+
+    .navbar-nav{
+        li{
+            margin-right: 25px;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-family: $bodyFont;
+            font-size: 17px;
+            a{
+                color: white !important;
+                @include transition(.3s);
+                &:hover{
+                color:#0085d3 !important;
+                @include transition(.3s)
+                }
+            }
+
+
+            .search-icon{
+                margin-top: 7px;
+            }
+        }
+
+        
+    }
+}
