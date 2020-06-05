@@ -1,5 +1,8 @@
+nav {
+  background-color: rgba(33, 35, 49, 0.95) !important;
+}
+
 nav .navbar-brand {
-  margin-top: 10px;
   margin-right: 0;
   margin-left: 25px;
 }
@@ -30,5 +33,135 @@ nav .navbar-nav li a:hover {
 
 nav .navbar-nav li .search-icon {
   margin-top: 7px;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+nav .navbar-nav li .search-icon:hover {
+  color: #0085d3 !important;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#time {
+  padding: 50px 0;
+}
+
+#time .odometer-wrapper {
+  height: 100%;
+  background-color: #2dcdf5;
+  padding: 100px 0;
+}
+
+#time .odometer-wrapper .odometer {
+  position: relative;
+}
+
+#time .odometer-wrapper .odometer span {
+  font-size: 50px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+#time .odometer-wrapper .odometer:not(:last-child):after {
+  position: absolute;
+  content: ":";
+  color: white;
+  text-align: center;
+  font-size: 35px;
+  top: 10%;
+  left: 123%;
+}
+
+#time .calendar {
+  padding: 100px 0;
+}
+
+#time .calendar .calendar-icon i {
+  font-size: 50px;
+  color: #2dcdf5;
+}
+
+#time .calendar .txt {
+  margin-top: 7%;
+}
+
+#time .calendar .txt h4 {
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 5%;
+}
+
+#time .calendar .txt p {
+  margin-top: 3%;
+  color: #748793;
+  padding: 0px 15%;
+  font-weight: 100;
+  font-size: 25px;
+}
+
+#time .location {
+  padding: 85.63px 0;
+  background-color: #222528;
+}
+
+#time .location .loc-icon i {
+  font-size: 50px;
+  color: #2dcdf5;
+}
+
+#time .location .loc-txt {
+  margin-top: 7%;
+}
+
+#time .location .loc-txt h4 {
+  color: white;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 5%;
+}
+
+#time .location .loc-txt p {
+  margin-top: 3%;
+  color: white;
+  padding: 0px 15%;
+  font-weight: 100;
+  font-size: 25px;
+}
+
+#time .work img {
+  height: 400px;
+}
+
+#time .hand {
+  padding: 171.2px 0;
+  background-image: url("../img/time-section/handshake.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+#time .hand a {
+  display: inline-block;
+  color: white;
+  border: white 4px solid;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#time .hand a:hover {
+  background-color: white;
+  color: #2dcdf5;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 /*# sourceMappingURL=style.css.map */

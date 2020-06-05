@@ -1,6 +1,7 @@
 nav{
+    background-color: rgba(33,35,49,.95)!important;
     .navbar-brand{
-        margin-top: 10px;
+        
         margin-right: 0;
         margin-left: 25px;
         img{
@@ -27,6 +28,13 @@ nav{
 
             .search-icon{
                 margin-top: 7px;
+                color: white;
+                cursor: pointer;
+                @include transition(.3s);
+                &:hover{
+                color:#0085d3 !important;
+                @include transition(.3s)
+                }
             }
         }
 

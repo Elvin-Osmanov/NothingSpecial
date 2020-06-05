@@ -1,0 +1,146 @@
+#time{
+    padding: 50px 0;
+
+
+    .odometer-wrapper{
+        height: 100%;
+        background-color: rgb(45, 205, 245);
+        padding: 100px 0;
+
+        .odometer{
+            position: relative;
+
+            span{
+                font-size: 50px;
+                color: white;
+                font-family: $textFont;
+                font-weight: 700;
+
+                
+            }
+
+            &:not(:last-child):after{
+                position: absolute;
+                content: ":";
+                color: white;
+                text-align: center;
+                font-size: 35px;
+                top: 10%;
+                left: 123%;
+            
+            }
+        }
+
+
+        
+    }
+
+    .calendar{
+        padding: 100px 0;
+
+        .calendar-icon{
+            
+            i{
+                font-size: 50px;
+                color: rgb(45, 205, 245);
+            }
+        }
+
+
+        .txt{
+            margin-top: 7%;
+
+            h4{
+                font-weight: 700;
+                letter-spacing: 1px;
+                margin-bottom:5%;
+            }
+
+
+            p{
+              margin-top: 3%;
+              color:#748793;
+              padding: 0px 15%;
+              font-weight: 100;
+              font-size: 25px;
+            }
+        }
+    }
+
+
+    .location{
+        padding: 85.63px 0;
+        background-color:#222528;
+
+        .loc-icon{
+            i{
+                font-size: 50px;
+                color: rgb(45, 205, 245);
+            }
+
+
+        }
+
+
+        .loc-txt{
+
+            margin-top: 7%;
+            
+
+            h4{
+                color: white;
+                font-weight: 700;
+                letter-spacing: 1px;
+                margin-bottom:5%;
+            }
+
+
+            p{
+              margin-top: 3%;
+              color:white;
+              padding: 0px 15%;
+              font-weight: 100;
+              font-size: 25px;
+            }
+
+        }
+
+        
+    }
+
+    .work{
+        img{
+        height: 400px;
+        } 
+
+    }
+    .hand{
+        padding: 171.2px 0;;
+        background-image: url("../img/time-section/handshake.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+
+        a{
+            
+            display: inline-block;
+            color: white;
+            border: white 4px solid;
+            text-decoration: none;
+            padding: 10px;
+            font-size: 20px;
+            font-weight: 700;
+            font-family: $textFont;
+            @include transition(.3s);
+
+            &:hover{
+                background-color: white;
+                color: rgb(45, 205, 245);
+                @include transition(.3s)
+            }
+        }
+
+    }
+    
+}
