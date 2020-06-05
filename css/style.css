@@ -370,4 +370,242 @@ nav .navbar-nav li .search-icon:hover {
   font-weight: 300;
   font-family: "Montserrat", sans-serif;
 }
+
+#events {
+  padding: 100px 0;
+}
+
+#events .day-list {
+  margin-top: 10%;
+}
+
+#events .day-list ul li {
+  padding: 8px 60px;
+  background-color: #0085d3;
+  border: 2px solid  #0085d3;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#events .day-list ul li:hover {
+  background-color: white;
+  border: 2px solid #ebebeb;
+  color: black;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#events .day-list ul li:active {
+  background-color: white;
+  border: 2px solid #ebebeb;
+  color: black;
+}
+
+#events .day-list ul li:not(:last-child) {
+  margin-right: 15px;
+}
+
+#events .inner-content1 {
+  padding: 55px;
+  border: 2px solid #ebebeb;
+}
+
+#events .inner-content1 h5 {
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 3px;
+  font-size: 19px;
+}
+
+#events .inner-content1 p {
+  color: #5f727f;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+#events .inner-content1 ul:not(:last-child) {
+  margin-bottom: 10%;
+}
+
+#events .inner-content1 ul li {
+  position: relative;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+#events .inner-content1 ul li i {
+  color: #0085d3;
+  margin-right: 10px;
+}
+
+#events .inner-content1 ul li:not(:first-child) {
+  margin-left: 20px;
+}
+
+#events .inner-content1 ul li:last-child:before {
+  content: "";
+  width: 2px;
+  height: 15px;
+  background-color: #ccc;
+  position: absolute;
+  top: 7px;
+  left: -7%;
+}
+
+#events .inner-content1 ul li:nth-child(2) {
+  color: #0085d3;
+}
+
+#events .inner-content2 {
+  padding: 55px;
+  display: none;
+  border: 2px solid #ebebeb;
+}
+
+#events .inner-content2 h5 {
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 3px;
+  font-size: 19px;
+}
+
+#events .inner-content2 p {
+  color: #5f727f;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+#events .inner-content2 ul:not(:last-child) {
+  margin-bottom: 10%;
+}
+
+#events .inner-content2 ul li {
+  position: relative;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+#events .inner-content2 ul li i {
+  color: #0085d3;
+  margin-right: 10px;
+}
+
+#events .inner-content2 ul li:not(:first-child) {
+  margin-left: 20px;
+}
+
+#events .inner-content2 ul li:last-child:before {
+  content: "";
+  width: 2px;
+  height: 15px;
+  background-color: #ccc;
+  position: absolute;
+  top: 7px;
+  left: -7%;
+}
+
+#events .inner-content2 ul li:nth-child(2) {
+  color: #0085d3;
+}
+
+#events .inner-content3 {
+  padding: 55px;
+  display: none;
+  border: 2px solid #ebebeb;
+}
+
+#events .inner-content3 h5 {
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 3px;
+  font-size: 19px;
+}
+
+#events .inner-content3 p {
+  color: #5f727f;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+#events .inner-content3 ul:not(:last-child) {
+  margin-bottom: 10%;
+}
+
+#events .inner-content3 ul li {
+  position: relative;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+#events .inner-content3 ul li i {
+  color: #0085d3;
+  margin-right: 10px;
+}
+
+#events .inner-content3 ul li:not(:first-child) {
+  margin-left: 20px;
+}
+
+#events .inner-content3 ul li:last-child:before {
+  content: "";
+  width: 2px;
+  height: 15px;
+  background-color: #ccc;
+  position: absolute;
+  top: 7px;
+  left: -7%;
+}
+
+#events .inner-content3 ul li:nth-child(2) {
+  color: #0085d3;
+}
+
+#events .inner-content4 {
+  padding: 55px;
+  display: none;
+  border: 2px solid #ebebeb;
+}
+
+#events .inner-content4 h5 {
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 3px;
+  font-size: 19px;
+}
+
+#events .inner-content4 p {
+  color: #5f727f;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+#events .inner-content4 ul:not(:last-child) {
+  margin-bottom: 10%;
+}
+
+#events .inner-content4 ul li {
+  position: relative;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+#events .inner-content4 ul li i {
+  color: #0085d3;
+  margin-right: 10px;
+}
+
+#events .inner-content4 ul li:not(:first-child) {
+  margin-left: 20px;
+}
+
+#events .inner-content4 ul li:last-child:before {
+  content: "";
+  width: 2px;
+  height: 15px;
+  background-color: #ccc;
+  position: absolute;
+  top: 7px;
+  left: -7%;
+}
+
+#events .inner-content4 ul li:nth-child(2) {
+  color: #0085d3;
+}
 /*# sourceMappingURL=style.css.map */
