@@ -199,7 +199,7 @@ nav .navbar-nav li .search-icon:hover {
 }
 
 #about {
-  padding: 50px 0;
+  padding: 90px 0;
 }
 
 #about .number {
@@ -270,5 +270,104 @@ nav .navbar-nav li .search-icon:hover {
 #about .number a.third:hover {
   color: white;
   background-color: #2ec6be;
+}
+
+#stats {
+  padding: 120px 0;
+  background-image: url("../../img/stats-section/statBack.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#stats .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#stats .content .stat-icon1 {
+  width: 85px;
+  height: 85px;
+  line-height: 98px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #0085d3;
+}
+
+#stats .content .stat-icon1 i {
+  font-size: 35px;
+  color: white;
+}
+
+#stats .content .stat-icon2 {
+  width: 85px;
+  height: 85px;
+  line-height: 98px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #00b2d3;
+}
+
+#stats .content .stat-icon2 i {
+  font-size: 35px;
+  color: white;
+}
+
+#stats .content .stat-icon3 {
+  width: 85px;
+  height: 85px;
+  line-height: 98px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #4fcbda;
+}
+
+#stats .content .stat-icon3 i {
+  font-size: 35px;
+  color: white;
+}
+
+#stats .content .stat-icon4 {
+  width: 85px;
+  height: 85px;
+  line-height: 98px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #5bcdc7;
+}
+
+#stats .content .stat-icon4 i {
+  font-size: 35px;
+  color: white;
+}
+
+#stats .content .stat-txt {
+  text-align: center;
+}
+
+#stats .content .stat-txt h1 {
+  font-size: 50px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  margin: 15% 0;
+}
+
+#stats .content .stat-txt h4 {
+  color: white;
+  font-weight: 300;
+  font-family: "Montserrat", sans-serif;
 }
 /*# sourceMappingURL=style.css.map */
