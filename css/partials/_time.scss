@@ -37,6 +37,7 @@
 
     .calendar{
         padding: 100px 0;
+        background-color:  #f4f6f7;
 
         .calendar-icon{
             
@@ -54,6 +55,7 @@
                 font-weight: 700;
                 letter-spacing: 1px;
                 margin-bottom:5%;
+                font-family: $textFont;
             }
 
 
@@ -61,8 +63,9 @@
               margin-top: 3%;
               color:#748793;
               padding: 0px 15%;
-              font-weight: 100;
+              font-weight: 300;
               font-size: 25px;
+              font-family: $bodyFont;
             }
         }
     }
@@ -92,6 +95,7 @@
                 font-weight: 700;
                 letter-spacing: 1px;
                 margin-bottom:5%;
+                font-family: $textFont;
             }
 
 
@@ -101,6 +105,7 @@
               padding: 0px 15%;
               font-weight: 100;
               font-size: 25px;
+              font-family: $bodyFont;
             }
 
         }

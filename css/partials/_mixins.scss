@@ -3,3 +3,37 @@
     -ms-transition: $property;
     transition: $property;
 }
+
+
+@mixin title{
+    text-align: center;
+
+
+        h6{
+            font-family: $textFont;
+            letter-spacing: 8px;
+            font-weight: 700;
+            margin-bottom: 1.1rem;
+        }
+
+        h1{
+            font-family: $textFont;
+            font-weight: 700;
+            position: relative;
+            letter-spacing: 2px;
+
+            &:after{
+                content:"";
+                background-color: #0085d3;
+                width: 80px;
+                height: 2px;
+                position: absolute;
+                bottom: -40px;
+                left: 47%;
+
+            }
+        }
+    
+}
+
+.title{@include title}

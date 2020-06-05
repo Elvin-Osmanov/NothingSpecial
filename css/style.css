@@ -1,3 +1,31 @@
+.title {
+  text-align: center;
+}
+
+.title h6 {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 8px;
+  font-weight: 700;
+  margin-bottom: 1.1rem;
+}
+
+.title h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  position: relative;
+  letter-spacing: 2px;
+}
+
+.title h1:after {
+  content: "";
+  background-color: #0085d3;
+  width: 80px;
+  height: 2px;
+  position: absolute;
+  bottom: -40px;
+  left: 47%;
+}
+
 nav {
   background-color: rgba(33, 35, 49, 0.95) !important;
 }
@@ -78,6 +106,7 @@ nav .navbar-nav li .search-icon:hover {
 
 #time .calendar {
   padding: 100px 0;
+  background-color: #f4f6f7;
 }
 
 #time .calendar .calendar-icon i {
@@ -93,14 +122,16 @@ nav .navbar-nav li .search-icon:hover {
   font-weight: 700;
   letter-spacing: 1px;
   margin-bottom: 5%;
+  font-family: "Montserrat", sans-serif;
 }
 
 #time .calendar .txt p {
   margin-top: 3%;
   color: #748793;
   padding: 0px 15%;
-  font-weight: 100;
+  font-weight: 300;
   font-size: 25px;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 #time .location {
@@ -122,6 +153,7 @@ nav .navbar-nav li .search-icon:hover {
   font-weight: 700;
   letter-spacing: 1px;
   margin-bottom: 5%;
+  font-family: "Montserrat", sans-serif;
 }
 
 #time .location .loc-txt p {
@@ -130,6 +162,7 @@ nav .navbar-nav li .search-icon:hover {
   padding: 0px 15%;
   font-weight: 100;
   font-size: 25px;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 #time .work img {
@@ -163,5 +196,79 @@ nav .navbar-nav li .search-icon:hover {
   color: #2dcdf5;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+#about {
+  padding: 50px 0;
+}
+
+#about .number {
+  margin-top: 10%;
+}
+
+#about .number h1 {
+  font-size: 80px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #ecf1f3;
+}
+
+#about .number h4 {
+  letter-spacing: .05em;
+  color: black;
+  font-weight: 700;
+  word-spacing: 3px;
+  font-family: "Montserrat", sans-serif;
+}
+
+#about .number p {
+  color: #5f727f;
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 36px 0;
+}
+
+#about .number a {
+  text-decoration: none;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  padding: 7px 17px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+#about .number a:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#about .number a.first {
+  color: #0085d3;
+  border: 2px solid #0085d3;
+}
+
+#about .number a.first:hover {
+  color: white;
+  background-color: #0085d3;
+}
+
+#about .number a.second {
+  color: #00b2d3;
+  border: 2px solid #00b2d3;
+}
+
+#about .number a.second:hover {
+  color: white;
+  background-color: #00b2d3;
+}
+
+#about .number a.third {
+  color: #2ec6be;
+  border: 2px solid #2ec6be;
+}
+
+#about .number a.third:hover {
+  color: white;
+  background-color: #2ec6be;
 }
 /*# sourceMappingURL=style.css.map */
