@@ -608,4 +608,154 @@ nav .navbar-nav li .search-icon:hover {
 #events .inner-content4 ul li:nth-child(2) {
   color: #0085d3;
 }
+
+#halfSlide {
+  padding: 100px 0;
+}
+
+#halfSlide .slider1 {
+  background-color: #222528;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 64px 104px;
+}
+
+#halfSlide .slider1 .slider-img {
+  width: 75px;
+  height: 75px;
+}
+
+#halfSlide .slider1 .slider-txt h6 {
+  color: white;
+  font-weight: 700;
+  font-family: "Source Sans Pro", sans-serif;
+  margin-bottom: 0;
+  margin-top: 5%;
+}
+
+#halfSlide .slider1 .slider-txt span {
+  color: #8c8c8c;
+  font-size: 14px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+#halfSlide .slider1 .slider-txt p {
+  color: white;
+  font-weight: 300;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  margin: 7.5% 0;
+}
+
+#halfSlide .slider1 .slider-txt i {
+  color: #0085d3;
+  font-size: 50px;
+}
+
+#halfSlide .slider2 {
+  background-color: #222528;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 42.2px 86px;
+}
+
+#halfSlide .slider2 .slider-img {
+  width: 75px;
+  height: 75px;
+}
+
+#halfSlide .slider2 .slider-txt h6 {
+  color: white;
+  font-weight: 700;
+  font-family: "Source Sans Pro", sans-serif;
+  margin-bottom: 0;
+  margin-top: 5%;
+}
+
+#halfSlide .slider2 .slider-txt span {
+  color: #8c8c8c;
+  font-size: 14px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+#halfSlide .slider2 .slider-txt p {
+  color: white;
+  font-weight: 300;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  margin: 7.5% 0;
+}
+
+#halfSlide .slider2 .slider-txt i {
+  color: #0085d3;
+  font-size: 50px;
+}
+
+#halfSlide .actions .prev {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 3%;
+}
+
+#halfSlide .actions .prev i {
+  color: white;
+  padding: 10px 15px;
+  background-color: #3a3d40;
+  font-size: 22px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#halfSlide .actions .prev i:hover {
+  background-color: #0085d3;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#halfSlide .actions .next {
+  position: absolute;
+  cursor: pointer;
+  top: 50%;
+  right: 4%;
+}
+
+#halfSlide .actions .next i {
+  color: white;
+  padding: 10px 15px;
+  background-color: #3a3d40;
+  font-size: 22px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#halfSlide .actions .next i:hover {
+  background-color: #0085d3;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
 /*# sourceMappingURL=style.css.map */
