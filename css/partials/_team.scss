@@ -1,0 +1,209 @@
+#team{
+    padding: 100px 0;
+
+
+    .speaker{
+        margin-top: 30%;
+        padding: 35px 40px;
+        border: 1px solid #dfe5e8;
+        cursor: pointer;
+        @include transition(.5s);
+
+        &:hover{
+
+            .speaker-img{
+
+                &::after{
+                    visibility: visible;
+                    opacity: 1;
+                    @include transition(.5s);
+                }
+                @include transition(.5s);
+            }
+            @include transition(.5s);
+            
+        }
+
+
+        .speaker-img{
+
+            width: 120px;
+            height: 120px;
+            position: relative;
+            @include transition(.5s);
+
+
+            
+            
+
+            
+
+            &::after{
+                content: "";
+                width: 120px;
+                height: 120px;
+                border-radius: 50%;
+                background-color: rgba(70,72,92,.7);
+                position: absolute;
+                top: 0;
+                left: 0;
+                visibility: hidden;
+                opacity:0 ;
+                @include transition(.5s);
+                
+            }
+        }
+
+
+        .speaker-txt{
+            margin-bottom: 20px;
+
+            h4{
+
+                font-weight: 300;
+                font-family: $bodyFont;
+                margin: 10% 0;
+
+            }
+
+            span{
+
+                color: #99a9b5;
+                font-family: $bodyFont;
+                font-size: .875em;
+
+            }
+
+            h5{
+                font-weight: 700;
+                font-family: $textFont;
+                text-decoration: none;
+                display: block; 
+                font-size: 19px;
+                color: #0085d3;
+                margin-top: 7%;           
+            }
+        }
+
+        .social-links{
+
+            ul{
+                display: flex;
+
+                li{
+
+                    width: 22px;
+                    height: 22px;
+                    line-height: 18px;
+                    text-align: center;
+                    border-radius: 50%;
+                    background-color: #b6c6c9;
+                    @include transition(.3s);
+
+                    i{
+                        font-size: 12px;
+                        color: white;
+                    }
+
+
+                    &:not(:last-child){
+                        margin-right: 13px;
+                    }
+
+
+                    &:nth-child(1):hover{
+                        background-color: #4e64b5;
+                        @include transition(.3s);
+                    }
+                    &:nth-child(2):hover{
+                        background-color: #f44336;
+                        @include transition(.3s);
+                    }
+                    &:nth-child(3):hover{
+                        background-color: #00aced;
+                        @include transition(.3s);
+                    }
+                    &:nth-child(4):hover{
+                        background-color: #0288d1;
+                        @include transition(.3s);
+                    }
+                    &:nth-child(5):hover{
+                        background-color: #9a8f62;
+                        @include transition(.3s);
+                    }
+                    &:nth-child(6):hover{
+                        background-color: #00aff0;
+                        @include transition(.3s);
+                    }
+
+
+
+                }
+            }
+        }
+
+        .email{
+            position: relative;
+
+            i{
+                position: absolute;
+                font-size: 35px;
+                top: -29%;
+                right: -90px;
+                color: #b6c6c9;
+                @include transition(.3s);
+
+                &:hover{
+                    color: black;
+                    @include transition(.3s);
+                }
+            }
+        }
+
+        .downpart{
+            display: flex;
+        }
+    }
+
+    .second-team{
+        display: none;
+
+    }
+
+    .third-team{
+        display: none;
+    }
+
+
+    .dots{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20%;
+        
+
+        ul{
+            display: flex;
+            cursor: pointer;
+
+
+            li{
+
+                width: 15px;
+                height: 15px;
+                border: 2px solid #b6c6c9;
+                border-radius: 50%;
+
+                &:not(:last-child){
+                    margin-right: 10px;
+                }
+
+                &:active{
+                    background-color: #b6c6c9;
+                }
+            }
+        }
+
+
+    }
+}
