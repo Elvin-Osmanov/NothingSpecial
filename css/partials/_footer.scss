@@ -1,0 +1,167 @@
+#up{
+
+    padding: 100px 0;
+    background-color: #222528;
+
+    .mainLogo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;       
+        p{
+            font-weight: 100;
+            font-size: 24px;
+            font-family: $bodyFont;
+            color: #99a9b5;
+            margin: 7% 0;
+        }
+
+
+        ul{
+            display: flex;
+
+            li{
+                cursor: pointer;
+                border-radius: 50%;
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+                text-align: center;
+                background-color: #00aedd;
+                color: #222528;
+                @include transition(.3s);
+
+
+                &:not(:last-child){
+                    margin-right: 25px;
+                }
+
+                &:nth-child(1):hover{
+                    background-color: #4e64b5;
+                    @include transition(.3s);
+                    
+                }
+                &:nth-child(2):hover{
+                    background-color:#00aced;
+                    @include transition(.3s);
+                }
+                &:nth-child(3):hover{
+                    background-color:#f44336;
+                    @include transition(.3s);
+                }
+                &:nth-child(4):hover{
+                    background-color: #ff5757;
+                    @include transition(.3s);
+                }
+                &:nth-child(5):hover{
+                    background-color: #456988;
+                    @include transition(.3s);
+                }
+                &:nth-child(6):hover{
+                    background-color: #1db3e3;
+                    @include transition(.3s);
+                }
+            }
+        }
+    }
+}
+
+
+#down{
+
+    padding: 25px 0;
+    background-color: #1b1e20;
+    border-top: 1px solid #313646;
+
+    .copyright{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        span{
+            color: #99a9b5;
+            font-size: 12.5px;
+            font-family: $bodyFont;
+
+        }
+
+        .social{
+
+            ul{
+
+                li{
+                    cursor: pointer;
+                    &:not(:last-child){
+                        margin-right: 10px;
+                    }
+
+                    &:nth-child(1){   
+                      color: #4e64b5;
+                      @include transition(.3s);
+                    
+                      &:hover{
+                        color: white;
+                        @include transition(.3s);
+                      }
+                    }
+                    &:nth-child(2){   
+                      color: #0288d1;
+                      @include transition(.3s);
+                    
+                      &:hover{
+                        color: white;
+                        @include transition(.3s);
+                      }
+                    }
+                    &:nth-child(3){   
+                      color: #00aced;
+                      @include transition(.3s);
+                    
+                      &:hover{
+                        color: white;
+                        @include transition(.3s);
+                      }
+                    }
+                    &:nth-child(4){   
+                      color: #9a8f62;
+                      @include transition(.3s);
+                    
+                      &:hover{
+                        color: white;
+                        @include transition(.3s);
+                      }
+                    }
+                    &:nth-child(5){   
+                      color: #ff5757;
+                      @include transition(.3s);
+                    
+                      &:hover{
+                        color: white;
+                        @include transition(.3s);
+                      }
+                    }
+                    &:nth-child(6){   
+                      color: #f44336;
+                      @include transition(.3s);
+                    
+                      &:hover{
+                        color: white;
+                        @include transition(.3s);
+                      }
+                    }
+                    &:nth-child(7){   
+                      color: #c82929;
+                      @include transition(.3s);
+                    
+                      &:hover{
+                        color: white;
+                        @include transition(.3s);
+                      }
+                    }
+
+
+                }
+            }
+        }
+    }
+}

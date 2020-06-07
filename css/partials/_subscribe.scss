@@ -1,0 +1,73 @@
+#subscribe{
+    padding: 100px 0;
+    background-image: url("../img/subscribe-section/hands.jpg");
+    background-position: center;
+    background-size: cover;
+     background-repeat: no-repeat;
+
+    .hand-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        i{
+            font-size: 50px;
+            color: #00b2d3;
+            margin-bottom:5%;
+        }
+
+        h1{
+
+            font-weight: 700;
+            color: white;
+            font-family: $textFont;
+        }
+
+        p{
+            font-size:24px;
+            color: white;
+            margin: 3% 0;
+            font-weight: 300;
+            font-family: $bodyFont;
+        }
+
+        input[type=email]{
+            margin-top: 4%;
+            padding: 25px 92.2px;
+                border: 0;
+                border-radius: 0;
+
+                &:focus{
+                box-shadow: none;
+                outline: 0;}
+
+                &::placeholder{
+                    text-align: center;
+                }
+
+               
+        }
+
+
+        a{
+            text-decoration: none;
+            display: inline-block;
+            background-color: transparent;
+            color: #00bcd4;
+            border: 3px solid #00bcd4;
+            padding: 7.2px 125.48px;
+            margin-top: 3%;
+            font-size: 20px;
+            font-weight: 700;
+            @include transition(.3s);
+
+            &:hover{
+                color: white;
+                background-color: #00bcd4;
+                @include transition(.3s);
+            }
+            
+        }
+    }
+}

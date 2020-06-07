@@ -1,0 +1,34 @@
+#contact{
+    // padding: 100px 0;
+
+    .gradient{
+        background: rgb(2,0,36);
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,98,250,1) 0%, rgba(1,191,241,1) 60%, rgba(0,212,255,1) 100%);
+        padding: 78px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        i{
+            font-size: 35px;
+            color: white;
+            margin-bottom: 6%;
+        }
+
+        h4{
+            font-family: $textFont;
+            color: white;
+            font-weight: 700;
+            margin-bottom: 8%;
+
+
+        }
+        p{
+            margin: 0;
+            color: white;
+            font-family: $bodyFont;
+        }
+    }
+
+}
