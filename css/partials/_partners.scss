@@ -1,0 +1,45 @@
+#partners{
+
+    padding: 100px 0;
+
+    .title{
+        margin-bottom:10%;
+    }
+
+    .sponsor{
+
+        position: relative;
+        margin-top: 8px;
+        margin-left: 8px;
+        @include transition(.5s);
+        cursor: pointer;
+        
+
+        
+
+
+        .overlay-sponsor{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: #f4f6f780;
+            visibility: visible;
+            opacity: 1;
+            @include transition(.5s);
+
+
+        }
+
+        &:hover{
+            @include transition(.5s);
+
+            .overlay-sponsor{
+                visibility: hidden;
+                opacity: 0;
+                @include transition(.5s);
+            }
+        }
+    }
+}

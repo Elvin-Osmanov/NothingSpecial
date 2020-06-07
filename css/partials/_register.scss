@@ -1,0 +1,65 @@
+#register{
+    padding: 100px 0;
+    background-image: url("../img/register-section/laptop.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+
+    .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1{
+            font-family: $textFont;
+            font-size: 80px;
+            font-weight: 700;
+            color: white;
+            letter-spacing: 2px;
+
+
+        }
+
+        h6{
+            font-family: $textFont;
+            letter-spacing: 8px;
+            font-weight: 700;
+            margin-bottom: 2.1rem;
+            color: white;
+
+        }
+
+        p{
+            color: white;
+            font-size: 24px;
+            font-weight: 300;
+            font-size: $bodyFont;
+            margin: 6.5%;
+
+        }
+
+        a{
+            font-weight: 700;
+            font-family: $textFont;
+            padding: 10px 15px;
+            border: 3px solid white;
+            background-color: transparent;
+            text-decoration: none;
+            color: white;
+            font-size: 19px;
+            @include transition(.4s);
+
+            &:hover{
+                color: rgb(72, 189, 214);
+                background-color: white;
+                @include transition(.4s);
+            }
+
+
+
+        }
+    }
+}

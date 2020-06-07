@@ -1,0 +1,64 @@
+#conference{
+    padding: 100px 0;
+    background-color: #222528;
+
+    .title{
+        h1{
+            color: white;
+        }
+
+        h6{
+            color: white;
+        }
+
+        margin-bottom: 10%;
+    }
+
+    .photo{
+        position: relative;
+        
+        @include transition(.7s);
+        overflow: hidden;
+
+        img{
+            @include transition(.7s);
+        }
+
+        .overlay{
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(27, 148, 219, 0.8);
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            visibility: hidden;
+            opacity: 0;
+            @include transition(.7s);
+
+            i{
+
+                color: white;
+                font-size: 30px;
+
+                
+            }
+        }
+
+        &:hover{
+            @include transition(.7s);
+            img{
+                transform: scale(1.2);
+                @include transition(.7s);
+            }
+            .overlay{
+                visibility: visible;
+                opacity: 1;
+                @include transition(.7s);
+
+            }
+        }
+    }
+}
