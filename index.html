@@ -14,7 +14,7 @@
 <body>
     <header>
         <!-- navbar starts -->
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light">
             <a class="navbar-brand" href="#">
                 <img src="img/logo/logo_main.png" class="img-fluid" >
             </a>
@@ -24,41 +24,72 @@
             <div class="collapse navbar-collapse " id="navbarNav">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item ">
-                  <a class="nav-link" href="#">When & Where</a>
+                  <a class="nav-link onShow" href="#time">When & Where</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
+                  <a class="nav-link" href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Schedule</a>
+                  <a class="nav-link" href="#events">Schedule</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Buy tickets</a>
+                  <a class="nav-link" href="#tickets">Buy tickets</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Speakers</a>
+                  <a class="nav-link" href="#team">Speakers</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Impressions</a>
+                  <a class="nav-link" href="#conference">Impressions</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Partners</a>
+                  <a class="nav-link" href="#partners">Partners</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">News</a>
+                  <a class="nav-link" href="#news">News</a>
                 </li>
                 <li class="nav-item">
                   <div class="search-icon">
                     <i class="fas fa-search"></i>
                   </div>
+                  <div class="close-icon d-none">
+                    <i class="fas fa-times"></i>
+                  </div>
                 </li>
                 
               </ul>
+            </div>
+            <div class="input-group col-md-2 lil-modal d-none">
+              <input type="text" class="form-control " placeholder="Search..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+              <div class="input-group-append">
+                <span class="input-group-text" id="basic-addon2"><i class="fas fa-search"></i></span>
+              </div>
             </div>
           </nav>
         <!-- navbar ends -->
     </header>
     <main>
+      <!-- big-slider starts -->
+      <section id="bigSlider">
+        <div class="container-fluid p-0">
+          <div class="row no-gutters">
+            <div class="col-lg-12">
+             <div class="intro">
+               <h1>DEVELOPMENT CONFERENCE 2020</h1>
+               <ul class="list-unstyled">
+                 <li>4 DAYS</li>
+                 <li>18 TALKS</li>
+                 <li>AWESOME SPEAKERS</li>
+                 <div class="down-icon animate__slideInDown">
+                  <i class="fas fa-mouse"></i>
+                 </div>
+               </ul>
+             </div>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+      <!-- big-slider ends -->
       <!-- time section starts -->
       <section id="time">
         <div class="container-fluid p-0">
@@ -261,15 +292,15 @@
             <div class="col-lg-12">
               <div class="day-list">
                 <ul class="list-unstyled d-lg-flex">
-                  <li class="active">DAY 1</li>
-                  <li>DAY 2</li>
-                  <li>DAY 3</li>
-                  <li>DAY 4</li>
+                  <li class="activeList" href="#day1">DAY 1</li>
+                  <li href="#day2">DAY 2</li>
+                  <li href="#day3">DAY 3</li>
+                  <li href="#day4">DAY 4</li>
                 </ul>
               </div>
             </div>
             <div class="col-lg-12">
-              <div class="inner-content1">
+              <div class="inner-content active-event" id="day1">
                 <h5>GATHERING & SIGNING UP</h5>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 <ul  class="list-unstyled d-lg-flex">
@@ -293,7 +324,7 @@
                 </ul>
 
               </div>
-              <div class="inner-content2">
+              <div class="inner-content " id="day2">
                 <h5>GATHERING & SIGNING UP</h5>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 <ul  class="list-unstyled d-lg-flex">
@@ -318,7 +349,7 @@
                 
 
               </div>
-              <div class="inner-content3">
+              <div class="inner-content " id="day3">
                 <h5>GATHERING & SIGNING UP</h5>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 <ul  class="list-unstyled d-lg-flex">
@@ -342,7 +373,7 @@
                 </ul>
 
               </div>
-              <div class="inner-content4">
+              <div class="inner-content " id="day4">
                 <h5>GATHERING & SIGNING UP</h5>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 <ul  class="list-unstyled d-lg-flex">
@@ -375,18 +406,18 @@
       <!-- halfSlide section starts -->
       <section id="halfSlide">
         <div class="container-fluid p-0">
-          <div class="row">
+          <div class="row position-relative">
             <div class="col-lg-6 p-0">
               <div class="backimg">
                 <img src="img/slider/half.jpg" class="img-fluid">
 
               </div>
             </div>
-            <div class="col-lg-6 p-0 position-relative">
-              <div class="slider1 ">
+            <div class="col-lg-6 p-0 parentSlider">
+              <div class="slider activeSlide first">
                 
 
-                  <div class="slider-img">
+                <div class="slider-img">
                     <img src="img/slider/face1-thegem-testimonial.jpg" class="img-fluid rounded-circle">
                   </div>
                   <div class="slider-txt">
@@ -394,7 +425,7 @@
                     <span>Senior Developer</span>
                     <p>The blinding splendor of the diamond. The mighty power of the rocket. Design perfection. The status symbol for any business.</p>
                     <i class="fas fa-quote-right"></i>
-                  </div>
+                </div>
                   
 
                 
@@ -402,7 +433,7 @@
 
 
               </div>
-              <div class="slider2 d-none">
+              <div class="slider second">
                 
 
                 <div class="slider-img">
@@ -420,11 +451,12 @@
               
 
 
-            </div>
-              <div class="actions ">
-                <div class="prev "><i class="fas fa-angle-left"></i></div>
-                <div class="next "><i class="fas fa-angle-right"></i></div>
               </div>
+              
+            </div>
+            <div class="actions ">
+              <div class="prev "><i class="fas fa-angle-left"></i></div>
+              <div class="next "><i class="fas fa-angle-right"></i></div>
             </div>
           </div>
         </div>
@@ -526,7 +558,7 @@
           <div class="row">
             
               <div class="col-lg-4">
-                <div class="speaker  first-team">
+                <div class="speaker first-team activeSpeaker" >
   
                   <div class="speaker-img">
                     <img src="img/team-section/face1.jpg" class="img-fluid rounded-circle">
@@ -557,7 +589,7 @@
   
               </div>
               <div class="col-lg-4">
-                <div class="speaker first-team">
+                <div class="speaker first-team activeSpeaker" >
   
                   <div class="speaker-img">
                     <img src="img/team-section/face2.jpg" class="img-fluid rounded-circle">
@@ -588,7 +620,7 @@
   
               </div>
               <div class="col-lg-4">
-                <div class="speaker first-team">
+                <div class="speaker first-team activeSpeaker" >
   
                   <div class="speaker-img">
                     <img src="img/team-section/face3.jpg" class="img-fluid rounded-circle">
@@ -621,7 +653,7 @@
             
             
               <div class="col-lg-4">
-                <div class="speaker second-team">
+                <div class="speaker second-team" >
   
                   <div class="speaker-img">
                     <img src="img/team-section/face4.jpg" class="img-fluid rounded-circle">
@@ -652,7 +684,7 @@
   
               </div>
               <div class="col-lg-4">
-                <div class="speaker second-team">
+                <div class="speaker second-team" >
   
                   <div class="speaker-img">
                     <img src="img/team-section/face5.jpg" class="img-fluid rounded-circle">
@@ -683,7 +715,7 @@
   
               </div>
               <div class="col-lg-4">
-                <div class="speaker second-team">
+                <div class="speaker second-team" >
   
                   <div class="speaker-img">
                     <img src="img/team-section/face6.jpg" class="img-fluid rounded-circle">
@@ -716,7 +748,7 @@
             
             
               <div class="col-lg-4">
-                <div class="speaker third-team">
+                <div class="speaker third-team" >
   
                   <div class="speaker-img">
                     <img src="img/team-section/face7.jpg" class="img-fluid rounded-circle">
@@ -747,7 +779,7 @@
   
               </div>
               <div class="col-lg-4">
-                <div class="speaker third-team">
+                <div class="speaker third-team" >
   
                   <div class="speaker-img">
                     <img src="img/team-section/face8.jpg" class="img-fluid rounded-circle">
@@ -778,7 +810,7 @@
   
               </div>
               <div class="col-lg-4">
-                <div class="speaker third-team">
+                <div class="speaker third-team" >
   
                   <div class="speaker-img">
                     <img src="img/team-section/face5.jpg" class="img-fluid rounded-circle">
@@ -815,9 +847,9 @@
             <div class="col-lg-4 offset-lg-4">
               <div class="dots">
                 <ul class="list-unstyled presetList">
-                  <li class="active firts-t"></li>
-                  <li class="second-t"></li>
-                  <li class="third-t"></li>
+                  <li class="activeDot " id="first-t"></li>
+                  <li id="second-t"></li>
+                  <li id="third-t"></li>
                 </ul>
               </div>
             </div>

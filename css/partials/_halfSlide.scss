@@ -1,9 +1,10 @@
 #halfSlide{
-    padding: 100px 0;
+    overflow: hidden;
+    
 
-    .slider1{
+    .slider{
         background-color: #222528;
-        display: flex;
+        display: none;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -48,53 +49,18 @@
 
 
     }
-    .slider2{
-        background-color: #222528;
+
+    .activeSlide{
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding: 42.2px 86px;
-
-        .slider-img{
-            width: 75px;
-            height:75px;
-            
-        }
-        
-        .slider-txt{
-            h6{
-                color: white;
-                font-weight: 700;
-                font-family: $bodyFont;
-                margin-bottom: 0;
-                margin-top: 5%;
-            }
-    
-            span{
-                color:#8c8c8c;
-                font-size: 14px;
-                font-family: $bodyFont;
-            }
-    
-            p{
-                color: white;
-                font-weight: 300;
-                font-family: $textFont;
-                font-size: 24px;
-                margin: 7.5% 0;
-                
-            }
-
-            i{
-                color: #0085d3;
-                font-size: 50px;
-            }
-        }
-
-
     }
+
+    .second{
+        padding:40.1px 75px;
+    }
+    
+
+
+    
 
 
 
@@ -104,7 +70,7 @@
             cursor: pointer;
             position: absolute;
             top: 50%;
-            left: 3%;
+            left: 51%;
 
             i{
 
@@ -130,7 +96,7 @@
             position: absolute;
             cursor: pointer;
             top: 50%;
-            right: 4%;
+            right: 2%;
 
             i{
                 color: white;

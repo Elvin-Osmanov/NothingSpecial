@@ -1,5 +1,8 @@
 #events{
     padding: 100px 0;
+    overflow: hidden;
+
+    
 
 
     .day-list{
@@ -27,14 +30,15 @@
 
                 }
 
-                &:active{
-                    background-color: white;
-                    border: 2px solid #ebebeb;
-                    color: black;
-                }
+                
 
 
 
+            }
+            .activeList{
+                background-color: white;
+                border: 2px solid #ebebeb;
+                color: black;
             }
 
             li:not(:last-child){
@@ -44,66 +48,7 @@
         }
     }
 
-    .inner-content1{
-
-        padding: 55px;
-        border: 2px solid #ebebeb;
-
-        h5{
-            font-weight: 700;
-            font-family: $textFont;
-            letter-spacing: 3px;
-            font-size: 19px;
-        }
-
-        p{
-            color:#5f727f;
-            font-family:$bodyFont ;
-        }
-
-        ul{
-            &:not(:last-child){margin-bottom: 10%;}
-
-
-            li{
-                position: relative;
-                font-family: $bodyFont;
-
-
-
-                i{
-                    color:#0085d3;
-                    margin-right: 10px;
-                }
-
-
-                &:not(:first-child){
-
-                    margin-left: 20px;
-                }
-
-                &:last-child:before{
-                    content: "";
-                    width: 2px;
-                    height: 15px;
-                    background-color: #ccc;
-                    position: absolute;
-                    top: 7px;
-                    left: -7%;
-
-                }
-                &:nth-child(2){
-                    color:#0085d3;
-                    
-                }
-            }
-
-           
-
-            
-        }
-    }
-    .inner-content2{
+    .inner-content{
 
         padding: 55px;
         display: none;
@@ -163,124 +108,9 @@
             
         }
     }
-    .inner-content3{
 
-        padding: 55px;
-        display: none;
-        border: 2px solid #ebebeb;
-
-        h5{
-            font-weight: 700;
-            font-family: $textFont;
-            letter-spacing: 3px;
-            font-size: 19px;
-        }
-
-        p{
-            color:#5f727f;
-            font-family:$bodyFont ;
-        }
-
-        ul{
-            &:not(:last-child){margin-bottom: 10%;}
-
-
-            li{
-                position: relative;
-                font-family: $bodyFont;
-
-
-
-                i{
-                    color:#0085d3;
-                    margin-right: 10px;
-                }
-
-
-                &:not(:first-child){
-
-                    margin-left: 20px;
-                }
-
-                &:last-child:before{
-                    content: "";
-                    width: 2px;
-                    height: 15px;
-                    background-color: #ccc;
-                    position: absolute;
-                    top: 7px;
-                    left: -7%;
-
-                }
-                &:nth-child(2){
-                    color:#0085d3;
-                    
-                }
-            }
-
-           
-
-            
-        }
+    .active-event{
+        display: block;
     }
-    .inner-content4{
-
-        padding: 55px;
-        display: none;
-        border: 2px solid #ebebeb;
-
-        h5{
-            font-weight: 700;
-            font-family: $textFont;
-            letter-spacing: 3px;
-            font-size: 19px;
-        }
-
-        p{
-            color:#5f727f;
-            font-family:$bodyFont ;
-        }
-
-        ul{
-            &:not(:last-child){margin-bottom: 10%;}
-
-
-            li{
-                position: relative;
-                font-family: $bodyFont;
-
-
-
-                i{
-                    color:#0085d3;
-                    margin-right: 10px;
-                }
-
-
-                &:not(:first-child){
-
-                    margin-left: 20px;
-                }
-
-                &:last-child:before{
-                    content: "";
-                    width: 2px;
-                    height: 15px;
-                    background-color: #ccc;
-                    position: absolute;
-                    top: 7px;
-                    left: -7%;
-
-                }
-                &:nth-child(2){
-                    color:#0085d3;
-                    
-                }
-            }
-
-           
-
-            
-        }
-    }
+    
 }

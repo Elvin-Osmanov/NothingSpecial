@@ -1,0 +1,90 @@
+#bigSlider{
+    height: 100vh;
+    overflow: hidden;
+    background-image: url("../img/big-slider-section/10.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    .intro{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        margin-top: 10%;
+        
+        h1{
+
+            font-size: 85px;
+            font-family: $textFont;
+            font-weight: 700;
+            color: white;
+            padding: 0 21%;
+            text-align: center;
+        
+        }
+
+        ul{
+            margin-top: 3%;
+            margin-left: 8%;
+            display: flex;
+            text-align: center;
+
+            li{
+                font-size: 15px;
+                letter-spacing: 5px;
+                font-family: $textFont;
+                color: white;
+                font-weight: 700;
+                position: relative;
+
+                &:not(:last-child){
+                    margin-right: 50px;
+                }
+
+                &:nth-child(1):after{
+                    content: "";
+                    width: 7px;
+                    height: 7px;
+                    border-radius: 50%;
+                    background-color: #0085d3;
+                    position: absolute;
+                    top: 7px;
+                    left: 108px;
+                }
+                &:nth-child(2):after{
+                    content: "";
+                    width: 7px;
+                    height: 7px;
+                    border-radius: 50%;
+                    background-color: #0085d3;
+                    position: absolute;
+                    top: 7px;
+                    left: 133px;
+                }
+            }
+        }
+
+        .down-icon{
+            position: absolute;
+            top: 180%;
+            left: 50%;
+            animation-name: slideInDown;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+
+            i{
+                display: block;
+                color: white;
+                font-size: 30px;
+
+            }
+        }
+
+       
+    }
+    
+}
+

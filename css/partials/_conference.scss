@@ -1,6 +1,7 @@
 #conference{
     padding: 100px 0;
     background-color: #222528;
+    overflow: hidden;
 
     .title{
         h1{
@@ -16,6 +17,7 @@
 
     .photo{
         position: relative;
+        cursor: pointer;
         
         @include transition(.7s);
         overflow: hidden;

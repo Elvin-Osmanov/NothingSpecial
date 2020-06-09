@@ -1,5 +1,6 @@
 nav{
-    background-color: rgba(33,35,49,.95)!important;
+    background-color: transparent!important;
+    position: relative;
     .navbar-brand{
         
         margin-right: 0;
@@ -10,6 +11,7 @@ nav{
     }
 
     .navbar-nav{
+        
         li{
             margin-right: 25px;
             text-transform: uppercase;
@@ -36,8 +38,73 @@ nav{
                 @include transition(.3s)
                 }
             }
+
+            .close-icon{
+                margin-left: 5px;
+                margin-top: 7px;
+                color: white;
+                cursor: pointer;
+                @include transition(.3s);
+                &:hover{
+                color:#0085d3 !important;
+                @include transition(.3s)
+                }
+
+            }
+        }
+
+        .onShow{
+            color:#0085d3 !important;
+                @include transition(.3s)
         }
 
         
     }
+
+    .input-group{
+        position: absolute;
+        top: 101%;
+        left: 80%;
+        padding: 22px;
+        background-color: #fff;
+        flex: 0 0 18.563%;
+        max-width: 18.563%;
+        
+
+        span{
+            cursor: pointer;
+            
+
+            i{
+                color: white;
+            }
+
+        }
+
+
+        input[type=text]{
+            
+            border-right: 0;
+            background-color: #e9ecef;
+            border-bottom-left-radius: .25rem;
+            border-top-left-radius: .25rem;
+
+            &:focus{
+                outline: none;
+                box-shadow: none;
+                border-color:#ced4da ;
+            }
+
+        }
+    }
+    
+}
+
+.scroll{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: rgba(33,35,49,.95)!important;
 }

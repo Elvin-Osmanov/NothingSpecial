@@ -1,5 +1,6 @@
 #team{
     padding: 100px 0;
+    overflow: hidden;
 
 
     .speaker{
@@ -7,6 +8,7 @@
         padding: 35px 40px;
         border: 1px solid #dfe5e8;
         cursor: pointer;
+        display: none;
         @include transition(.5s);
 
         &:hover{
@@ -165,13 +167,8 @@
         }
     }
 
-    .second-team{
-        display: none;
-
-    }
-
-    .third-team{
-        display: none;
+    .activeSpeaker{
+        display: block;
     }
 
 
@@ -198,9 +195,11 @@
                     margin-right: 10px;
                 }
 
-                &:active{
-                    background-color: #b6c6c9;
-                }
+                
+            }
+
+            .activeDot{
+                background-color: #b6c6c9;
             }
         }
 
