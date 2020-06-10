@@ -242,31 +242,86 @@ nav .input-group input[type=text]:focus {
   overflow: hidden;
 }
 
-#time .odometer-wrapper {
+#time .mainOdometer {
   height: 100%;
-  background-color: #2dcdf5;
   padding: 100px 0;
+  background-color: #2dcdf5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-#time .odometer-wrapper .odometer {
+#time .mainOdometer #odometerWrapper {
+  background-color: #2dcdf5;
+  overflow: hidden;
   position: relative;
 }
 
-#time .odometer-wrapper .odometer span {
-  font-size: 50px;
+#time .mainOdometer #odometerWrapper span {
+  font-size: 70px;
   color: white;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
 
-#time .odometer-wrapper .odometer:not(:last-child):after {
-  position: absolute;
-  content: ":";
+#time .mainOdometer #odometerWrapper span:not(:last-child) {
+  margin-right: 30px;
+}
+
+#time .mainOdometer #odometerWrapper span:nth-child(even) {
+  margin-bottom: 15px;
+}
+
+#time .mainOdometer #odometerWrapper .move {
+  -webkit-animation: moving 1s infinite;
+          animation: moving 1s infinite;
+}
+
+@-webkit-keyframes moving {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(25vh);
+            transform: translateY(25vh);
+  }
+}
+
+@keyframes moving {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(25vh);
+            transform: translateY(25vh);
+  }
+}
+
+#time .mainOdometer .odometer-txt {
+  margin-left: 20px;
+}
+
+#time .mainOdometer .odometer-txt span {
+  font-size: 25px;
   color: white;
-  text-align: center;
-  font-size: 35px;
-  top: 10%;
-  left: 123%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+#time .mainOdometer .odometer-txt span:not(:last-child) {
+  margin-right: 60px;
 }
 
 #time .calendar {

@@ -160,43 +160,7 @@ $(document).ready(function () {
 
 
     })
-
-
-    // halfSlide section 
-    // var nextBtn=$("#halfSlide .actions .next")
-    // var prevBtn=$("#halfSlide .actions .prev")
-
-    // nextBtn.click(function () {
-    // var activeSlide=$(".slider.activeSlide")
-    // var parentItem=$(".parentSlider")
-    // var actibveSlidePrev=activeSlide.prev()
-    
-
-    // if(actibveSlidePrev!=null){
-    //     actibveSlidePrev.addClass("activeSlide")
-    // }else{
-    //     parentItem.find("div.second").addClass("actibveSlide")
-    // }
-
-    // activeSlide.removeClass("activeSlide")
-    
-    // })
-    // prevBtn.click(function () {
-    // var activeSlide=$(".slider.activeSlide")
-    // var parentItem=$(".parentSlider")
-    // var actibveSlideNext=activeSlide.next()
-
-    // if(actibveSlideNext!=null){
-    //     actibveSlideNext.addClass("activeSlide")
-    // }else{
-    //     parentItem.find("div.first").addClass("actibveSlide")
-    // }
-
-    // activeSlide.removeClass("activeSlide")
-    
-    // })
-
-    
+   
 
 
 
@@ -206,7 +170,7 @@ $(document).ready(function () {
 });
 
 
-// halfSlide section bullshit
+// halfSlide section 
 var nextBtn=document.querySelector("#halfSlide .actions .next")
 var prevBtn=document.querySelector("#halfSlide .actions .prev")
 
@@ -244,4 +208,59 @@ prevBtn.addEventListener("click", function(){
 
 })
 
+function updateTimer(deadline){
+    var time = deadline - new Date()
+    return{
+        "days": Math.floor(time/(1000*60*60*24)),
+        "hours": Math.floor((time/(1000*60*60))%24),
+        "minutes": Math.floor((time/1000/60)%60),
+        "seconds": Math.floor((time/1000)%60),
+        "total": time
+    }
+}
+
+function animateClock(span){
+    span.className = "move"
+    setTimeout(function(){
+        span.className = ""
+    },700)
+}
+
+function startTimer(id, deadline){
+    var timerInterval= setInterval(function(){
+        var odometerWrapper = document.getElementById(id)
+        var timer = updateTimer(deadline)
+
+        odometerWrapper.innerHTML = "<span>" + timer.days + "</span>" 
+                                  + "<span>" + ":" + "</span>"
+                                  + "<span>" + timer.hours + "</span>"
+                                  + "<span>" + ":" + "</span>"
+                                  + "<span>" + timer.minutes + "</span>"
+                                  + "<span>" + ":" + "</span>"
+                                  + "<span>" + timer.seconds + "</span>";
+
+        var spans = odometerWrapper.getElementsByTagName("span")
+        animateClock(spans[6])
+        if(timer.seconds == 59) animateClock(spans[4])
+        if(timer.minutes ==59 && timer.seconds == 59) animateClock(spans[2])
+        if(timer.hours == 23 && timer.minutes ==59 && timer.seconds == 59) animateClock(spans[0])
+
+
+        // 
+        if(timer.total < 1){
+            clearInterval(timerInterval)
+            odometerWrapper.innerHTML="<span>0</span><span>0</span><span>0</span><span>0</span>"
+        }
+
+
+
+    },1000)
+
+}
+
+
+window.onload = function(){
+    var deadline = new Date("September 12, 2020 00:00:00")
+    startTimer("odometerWrapper",deadline)
+}
 
