@@ -173,6 +173,39 @@ $(document).ready(function () {
 
 
 
+    // odometer
+
+$(window).scroll(function () {
+    var hT = $("#stats").offset().top,
+      hH = $("#stats").outerHeight(),
+      wH = $(window).height(),
+      wS = $(this).scrollTop();
+    if (wS > (hT+hH-wH) && (hT > wS) && (wS+wH > hT+hH)) {
+      let odometers = document.querySelectorAll(".odometer");
+  
+      let speed = 300;
+  
+      odometers.forEach((counter) => {
+        let updateCount = () => {
+          let target = +counter.getAttribute("data-target");
+          let count = +counter.innerText;
+  
+          let inc = Math.ceil(target / speed);
+  
+          if (count < target) {
+            counter.innerText = count + inc;
+            setTimeout(updateCount, 10);
+          } else {
+            count.innerText = target;
+          }
+        };
+  
+        updateCount();
+      });
+    }
+  
+    
+  });
    
 
 
@@ -283,38 +316,6 @@ window.onload = function(){
 
 
 
-// odometer
 
-$(window).scroll(function () {
-  var hT = $("#stats").offset().top,
-    hH = $("#stats").outerHeight(),
-    wH = $(window).height(),
-    wS = $(this).scrollTop();
-  if (wS > (hT+hH-wH) && (hT > wS) && (wS+wH > hT+hH)) {
-    let odometers = document.querySelectorAll(".odometer");
-
-    let speed = 300;
-
-    odometers.forEach((counter) => {
-      let updateCount = () => {
-        let target = +counter.getAttribute("data-target");
-        let count = +counter.innerText;
-
-        let inc = Math.ceil(target / speed);
-
-        if (count < target) {
-          counter.innerText = count + inc;
-          setTimeout(updateCount, 10);
-        } else {
-          count.innerText = target;
-        }
-      };
-
-      updateCount();
-    });
-  }
-
-  
-});
 
 
