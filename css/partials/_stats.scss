@@ -78,14 +78,17 @@
 
         .stat-txt{
             text-align: center;
+            overflow: hidden;
 
-            h1{
+            .odometer{
+                width: 150px;
                 font-size: 50px;
                 letter-spacing: 2px;
                 font-weight: 700;
                 color:white;
                 font-family: $textFont;
                 margin:15% 0;
+                overflow: hidden;
             }
             h4{
                 color: white;

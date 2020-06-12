@@ -1,2 +1,61 @@
 $bodyFont:'Source Sans Pro', sans-serif;
 $textFont:'Montserrat', sans-serif;
+
+.scrollUp{
+    position: fixed;
+    cursor: pointer;
+    bottom: 5%;
+    right: 2.5%;
+    line-height: 50px;
+    text-align: center;
+    width: 45px;
+    height: 45px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+
+    i{
+        color: rgba(255, 255, 255, 0.534);
+        font-size: 25px;
+        
+
+    }
+}
+
+.settings{
+    position: fixed;
+    margin-left: 5px;
+    top: 15%;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    line-height: 45px;
+    text-align: center;
+    background-color: white;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    i{
+        color: black;
+        font-size: 22px;
+        transition:.5s;
+        animation-name: lap;
+        animation-duration: 2.5s;
+        animation-iteration-count: infinite;
+        animation-delay: 1.5s;
+
+
+        &:hover{
+            color: #00bcd4;
+            cursor: pointer;
+            transition:.5s;
+            
+
+        }
+    }
+}
+@keyframes lap {
+    from{
+        transform:rotate(0deg);
+    }to{
+        transform:rotate(360deg);
+    }
+}

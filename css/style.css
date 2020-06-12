@@ -1,3 +1,79 @@
+.scrollUp {
+  position: fixed;
+  cursor: pointer;
+  bottom: 5%;
+  right: 2.5%;
+  line-height: 50px;
+  text-align: center;
+  width: 45px;
+  height: 45px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.scrollUp i {
+  color: rgba(255, 255, 255, 0.534);
+  font-size: 25px;
+}
+
+.settings {
+  position: fixed;
+  margin-left: 5px;
+  top: 15%;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  line-height: 45px;
+  text-align: center;
+  background-color: white;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+.settings i {
+  color: black;
+  font-size: 22px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-animation-name: lap;
+          animation-name: lap;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+.settings i:hover {
+  color: #00bcd4;
+  cursor: pointer;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+@-webkit-keyframes lap {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes lap {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 .title {
   text-align: center;
 }
@@ -177,7 +253,7 @@ nav .input-group input[type=text]:focus {
 
 #bigSlider .intro ul {
   margin-top: 3%;
-  margin-left: 8%;
+  margin-left: 6%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -280,33 +356,6 @@ nav .input-group input[type=text]:focus {
 
 #time .mainOdometer #odometerWrapper span:nth-child(even) {
   margin-bottom: 15px;
-}
-
-#time .mainOdometer #odometerWrapper .move {
-  -webkit-animation: moving 1s infinite;
-          animation: moving 1s infinite;
-}
-
-@-webkit-keyframes moving {
-  from {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  to {
-    -webkit-transform: translateY(25vh);
-            transform: translateY(25vh);
-  }
-}
-
-@keyframes moving {
-  from {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  to {
-    -webkit-transform: translateY(25vh);
-            transform: translateY(25vh);
-  }
 }
 
 #time .mainOdometer .odometer-txt {
@@ -576,15 +625,18 @@ nav .input-group input[type=text]:focus {
 
 #stats .content .stat-txt {
   text-align: center;
+  overflow: hidden;
 }
 
-#stats .content .stat-txt h1 {
+#stats .content .stat-txt .odometer {
+  width: 150px;
   font-size: 50px;
   letter-spacing: 2px;
   font-weight: 700;
   color: white;
   font-family: "Montserrat", sans-serif;
   margin: 15% 0;
+  overflow: hidden;
 }
 
 #stats .content .stat-txt h4 {

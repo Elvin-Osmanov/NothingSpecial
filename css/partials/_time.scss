@@ -41,20 +41,20 @@
                     
                 }
     
-                .move{
+                // .move{
                     
-                    animation: moving 1s infinite;
-                }
+                //     animation: moving 1s infinite;
+                // }
     
-                @keyframes moving {
+                // @keyframes moving {
     
-                    from{
-                        transform: translateY(0);
-                    }to{
-                        transform: translateY(25vh);
-                    }
+                //     from{
+                //         transform: translateY(0);
+                //     }to{
+                //         transform: translateY(25vh);
+                //     }
                     
-                }
+                // }
     
                
             

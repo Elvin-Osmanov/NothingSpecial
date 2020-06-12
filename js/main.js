@@ -8,11 +8,13 @@ $(document).ready(function () {
         if($("html").scrollTop() >= 65){
 
             $("nav.navbar").addClass("scroll")
+            $(".scrollUp").fadeIn()
 
             
             
         }else{
             $("nav.navbar").removeClass("scroll")
+            $(".scrollUp").fadeOut()
             
             
         }
@@ -161,7 +163,17 @@ $(document).ready(function () {
 
     })
    
+    // scroll up
 
+    $(".scrollUp").click(function(e){
+
+        e.preventDefault();
+        $("html").animate({scrollTop: 0}, 1000);
+    })
+
+
+
+   
 
 
     
@@ -207,6 +219,11 @@ prevBtn.addEventListener("click", function(){
 
 
 })
+
+
+
+
+// time section clock
 
 function updateTimer(deadline){
     var time = deadline - new Date()
@@ -263,4 +280,41 @@ window.onload = function(){
     var deadline = new Date("September 12, 2020 00:00:00")
     startTimer("odometerWrapper",deadline)
 }
+
+
+
+// odometer
+
+$(window).scroll(function () {
+  var hT = $("#stats").offset().top,
+    hH = $("#stats").outerHeight(),
+    wH = $(window).height(),
+    wS = $(this).scrollTop();
+  if (wS > (hT+hH-wH) && (hT > wS) && (wS+wH > hT+hH)) {
+    let odometers = document.querySelectorAll(".odometer");
+
+    let speed = 300;
+
+    odometers.forEach((counter) => {
+      let updateCount = () => {
+        let target = +counter.getAttribute("data-target");
+        let count = +counter.innerText;
+
+        let inc = Math.ceil(target / speed);
+
+        if (count < target) {
+          counter.innerText = count + inc;
+          setTimeout(updateCount, 10);
+        } else {
+          count.innerText = target;
+        }
+      };
+
+      updateCount();
+    });
+  }
+
+  
+});
+
 
