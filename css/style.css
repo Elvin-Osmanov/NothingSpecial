@@ -358,6 +358,33 @@ nav .input-group input[type=text]:focus {
   margin-bottom: 15px;
 }
 
+#time .mainOdometer #odometerWrapper .move {
+  -webkit-animation: moving 1s infinite;
+          animation: moving 1s infinite;
+}
+
+@-webkit-keyframes moving {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(25vh);
+            transform: translateY(25vh);
+  }
+}
+
+@keyframes moving {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(25vh);
+            transform: translateY(25vh);
+  }
+}
+
 #time .mainOdometer .odometer-txt {
   margin-left: 20px;
 }
